@@ -3,10 +3,7 @@ package tech.hidouding.webone.action;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 import tech.hidouding.webone.entity.Song;
 import tech.hidouding.webone.service.TestService;
 
@@ -19,6 +16,7 @@ public class TestController {
     private TestService ts;
 
     @RequestMapping(value = "/hi",method = RequestMethod.GET)
+    @ResponseBody
     public String index(){
         return "hello douding";
     }
@@ -34,7 +32,7 @@ public class TestController {
         String r = ts.getTests();
 
         model.addAttribute("onesong", r);
-        return "test";
+        return "test.html";
     }
 
 //    @RequestMapping("/test")

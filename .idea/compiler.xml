@@ -8,12 +8,12 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="webone" />
-        <module name="untitled" />
         <module name="hidouding" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="test_mod" target="1.5" />
+      <module name="untitled" target="1.5" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
