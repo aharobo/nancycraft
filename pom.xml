@@ -11,5 +11,7 @@
 		<module>test_mod</module>
 		<module>webone</module>
 		<module>learn</module>
+		<module>learn-mod</module>
+		<module>study</module>
 	</modules>
 </project>

@@ -18,28 +18,18 @@ public class TestController {
     @RequestMapping(value = "/hi",method = RequestMethod.GET)
     @ResponseBody
     public String index(){
-        return "hello douding";
+
+        String s="";
+        return "hello douding3 ";
     }
 
     @RequestMapping("/test")
-    public String hello(Model model) {
-
-        Song song = new Song();
-        song.name="Better Off";
-        song.Author="douding";
-        song.duration=567;
+    public String test(Model model) {
 
         String r = ts.getTests();
 
         model.addAttribute("onesong", r);
         return "test.html";
     }
-
-//    @RequestMapping("/test")
-//    public String hello(HttpServletRequest request, @RequestParam(value = "name", defaultValue = "springboot-thymeleaf") String name) {
-//        Song song = new Song();
-//        request.setAttribute("singlePerson", song);
-//        return "test";
-//    }
 
 }

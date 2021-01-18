@@ -4,7 +4,8 @@ import lombok.Data;
 
 @Data
 public class Song {
-    public String name="";
-    public String Author="";
+    public int id=0;
+    public String title="";
+    public String author="";
     public int duration = 0;
 }

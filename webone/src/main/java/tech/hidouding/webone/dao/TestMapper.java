@@ -11,3 +11,6 @@ public interface TestMapper {
     public List<Test> getAllTests();
     public Test getOneTest();
 }
+
+
+//tech.hidouding.webone.dao.TestMapper.getAllTests

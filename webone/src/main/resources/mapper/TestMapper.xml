@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="tech.hidouding.webone.dao.TestMapper">
+
     <select id="getAllTests" resultType="tech.hidouding.webone.entity.Test">
         select id,name from t
     </select>
-<!--    <select id="getOneTest" resultType=" tech.hidouding.webone.entity.Test">-->
-<!--        select id,'name' from t limit 1-->
-<!--    </select>-->
+
 </mapper>
